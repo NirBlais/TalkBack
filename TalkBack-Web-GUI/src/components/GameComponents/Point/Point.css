@@ -1,0 +1,130 @@
+.piece{
+    height:calc(var(--shared-height)/11);
+    width:calc(var(--shared-height)/11);
+    border-radius: calc(var(--shared-height)/12);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size:2.5vh;
+}
+/* .piece::after{
+    height:calc(var(--shared-height)/11);
+    width:calc(var(--shared-height)/11);
+    border-radius: calc(var(--shared-height)/12);
+    z-index: 10;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem  rgb(0, 0, 0) ;
+} */
+
+.player{
+    background-color: rgb(202, 147, 63) ;
+    color:  rgb(82, 40, 27) ;
+}
+.opponent{
+    background-color: rgb(82, 40, 27) ;
+    color:  rgb(167, 128, 71) ;
+}
+.player.piece:hover{
+    background-color: rgb(209, 158, 82);
+    transform: scale(1.2);
+    z-index: 4;
+}
+.opponent.piece:hover{
+    background-color: rgb(136, 63, 41);
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+
+.id{
+    position: absolute;
+    transform: translate(0, 100%);
+    font-weight:bolder;
+    z-index: 5;
+}
+
+.pieces{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.highlighted-piece{
+    height:calc(var(--shared-height)/11);
+    width:calc(var(--shared-height)/11);
+    border-radius: calc(var(--shared-height)/12);
+    background-color: rgb(35, 150, 216) ;
+    opacity: 0.75;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlighted-clear-piece{
+    height:calc(var(--shared-height)/11);
+    width:calc(var(--shared-height)/11);
+    border-radius: calc(var(--shared-height)/12);
+    background-color: rgb(153, 216, 35) ;
+    opacity: 0.75;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkbox{
+    height:calc(var(--shared-height)/11);
+    width:calc(var(--shared-height)/11);
+    opacity: 0;
+    position: absolute;
+    z-index: 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox:checked + .opponent.piece{
+    background-color: rgb(175, 82, 53);
+    transform: scale(1.2);
+    z-index: 4;
+    opacity: 1;
+}
+.checkbox:checked:hover + .opponent.piece{
+    background-color: rgb(175, 82, 53);
+    transform: scale(1.2);
+    z-index: 4;
+    opacity: 1;
+}
+.checkbox:hover + .opponent.piece{
+    background-color: rgb(136, 63, 41);
+    transform: scale(1.2);
+    z-index: 5;
+    opacity: 1;
+}
+
+.checkbox:checked + .player.piece{
+    background-color:rgb(219, 151, 47);
+    transform: scale(1.2);
+    z-index: 4;
+    opacity: 1;
+}
+.checkbox:checked:hover + .player.piece{
+    background-color: rgb(219, 151, 47);
+    transform: scale(1.2);
+    z-index: 4;
+    opacity: 1;
+}
+.checkbox:hover + .player.piece{
+    background-color: rgb(209, 158, 82);
+    transform: scale(1.2);
+    z-index: 4;
+    opacity: 1;
+}
+
+.container{
+    position: relative;
+}
+
+

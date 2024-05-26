@@ -1,0 +1,30 @@
+.chat-message.right{
+margin-left: auto;
+background-color: rgb(207, 207, 207);
+}
+.chat-message{
+background-color: rgb(117, 117, 117);
+width: max-content;
+max-width: 75vw;
+margin: 0.5rem;
+border-radius: 1rem;
+overflow-wrap: break-word;
+display: flex;
+flex-direction: column;
+
+
+}
+.message{
+padding: 0.5rem;
+}
+
+.timestamp{
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    
+    
+}
+

@@ -1,0 +1,47 @@
+.user-container{
+    position: relative;
+}
+
+.information-container{
+    position: relative;
+    background-color: rgb(92, 92, 92);
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.user-profile{
+ margin: 1rem;
+ background-color: rgb(90, 90, 90);
+ padding: 0.5rem;
+ border-radius: 100%;
+ width: 15vh;
+ height: 15vh;
+ transform: scale();
+ filter: invert(100%);
+}
+.image{}
+
+.user-checkbox{
+    position: absolute;
+    width: 94%; /* Occupy full width of container */
+    height: 100%;
+    z-index: 3;
+    opacity: 0;
+}
+.user-name{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.user-checkbox:checked + .information-container{
+    background-color: #4CAFAA;
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 2;
+}

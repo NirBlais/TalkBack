@@ -1,0 +1,100 @@
+
+
+.game{
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resign-background{
+    background-color: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resign-popup{
+    width:calc(var(--shared-width)/1.5) ;
+    height:calc(var(--shared-height)/1.5)  ;
+
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column; 
+    border-radius: 2%;
+    background-color:rgb(197, 197, 197) ;
+}
+
+.resign-prompt{
+    z-index: 7;
+    margin: 2vh;  
+    font-size: 4vh;  
+    font-weight: bolder;
+    text-align: center;
+}
+.resign-buttons{
+    display: flex;
+    flex-direction: row;
+    z-index: 7;
+}
+.resign-buttons> div{
+    z-index: 7;
+    padding: 2vh;
+    margin: 2vh;
+    background-color: rgb(109, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    font-size: 4vh;
+}
+
+.game-page-button{
+    padding: 1vh;
+    margin: 0.5vh;
+    background-color: rgb(109, 209, 209);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    font-size: 3vh;
+    
+}
+.game-page-button-resign{
+    padding: 1vh;
+    margin: 0.5vh;
+    background-color: rgb(255, 64, 64);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    font-size: 3vh;
+    
+}
+.text-box{
+    padding: 1vh;
+    margin: 0vh;
+    background-color: rgb(39, 39, 39);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    font-size: 2vh;
+
+}
+
+ToastContainer{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

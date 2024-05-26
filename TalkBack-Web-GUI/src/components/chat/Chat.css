@@ -1,0 +1,51 @@
+.contact-name{
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000;
+    
+}
+.chat{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+}
+
+.message-list{
+    height: 90vh;
+    overflow: auto;
+}
+
+.message-input{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgb(211, 211, 211);
+    height: min-content;
+    margin: 0px;
+    justify-content: center;
+}
+.input{
+    width: 80vw;
+    margin: 0.5rem;
+    border-radius: 100px;
+    font-size: large;
+}
+.send-button{
+    transform: rotate(180deg);
+    margin: 0.3rem;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.send-button-image{
+    opacity: 0.5;
+}

@@ -1,0 +1,13 @@
+.footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    top:inherit;
+    right: 0;
+    left: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
