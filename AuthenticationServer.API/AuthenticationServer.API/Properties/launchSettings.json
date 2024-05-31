@@ -21,6 +21,16 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "5174",
+        "ASPNETCORE_HTTP_PORTS": "5173"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
@@ -28,7 +38,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:10752",
+      "applicationUrl": "http://0.0.0.0:10752",
       "sslPort": 44366
     }
   }
